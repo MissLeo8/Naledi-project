@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Naledi's Vanilla Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <form class="search-form" id="search-form">
+                <input type="search" placeholder="Enter a city..." required id="search-form-input"
+                    class="search-form-input" />
+                <input type="submit" value="Search" class="search-form-button" />
+            </form>
+        </header>
+        <main>
+            <div class="weather-data">
+                <div>
+                    <h1 id="city" class="weather-city">
+                        Knysna
+                    </h1>
+                    <p class="weather-details">
+                        <span id="date-time"></span>, <span id="description"></span>
+                        <br />
+                        Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
+                    </p>
+                </div>
+                <div class="weather-temperature">
+                    <div class="temperature-icon">
+                        ☀️
+                    </div>
+                    <div id="temperature" class="temperature-value">
+                        17
+                    </div>
+                    <div class="temperature-unit">
+                        °C
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            This Project is coded by <a href="https://github.com/MissLeo8" target="_blank">Naledi Leotlela</a>
+            and is
+            <a href="https://github.com/MissLeo8/naledi-vanilla-weather" target="_blank">
+                open-sourced on GitHub
+            </a>
+            and
+            <a href="https://earnest-praline-045261.netlify.app/" target="_blank">
+                hosted on Netlify
+            </a>
+        </footer>
+    </div>
+    <script src="src/interact.js"></script>
+</body>
+
+</html>
